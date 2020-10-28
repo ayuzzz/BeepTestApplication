@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html class="html-class">
+<head>
+    <script src="lib/jquery/jquery.js"></script>
+    <link href="lib/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="lib/twitter-bootstrap/js/bootstrap.js"></script>
+
+    <script src="static-files/js/main.js"></script>
+    <script src="static-files/js/ajaxApis.js"></script>
+    <link href="static-files/css/loader.css" rel="stylesheet" />
+    <link href="static-files/css/main.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body>
+
+    <div class="row">
+        <div id="app-container" class="container-window col-xl-3 col-md-12 col-sm-12">
+            <div class="row" id="counter">
+                <div class="col-xl-12 col-md-12 col-sm-12" style="padding:0px">
+                    <div id="countdown" style="overflow:visible">
+                        <div id="countdown-number">
+                            <img id="play-button" src="static-files/images/play-button.png" style="max-width:100px; max-height:100px;">
+                        </div>
+                        <svg id="circle-svg" class="svg-class">
+                            <filter id="f1" width="200%" height="200%">
+                                <feOffset result="offOut" in="SourceAlpha" dx="2" dy="2" />
+                                <feGaussianBlur result="blurOut" in="offOut" stdDeviation="1" />
+                                <feBlend in="SourceGraphic" in2="blurOut" mode="normal" />
+                            </filter>
+                            <circle id="circle-strokes" class="circle-strokes" r="100" cx="120" cy="120" filter="url(#f1)"></circle>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="shuttle-details">
+                <div class="col-xl-4 col-md-6 col-sm-12" style="border-right:lightgray 1px solid; height:inherit">
+                    <h6 style="text-align:center">NEXT SHUTTLE</h6>
+                    <p id="next-shuttle" style="text-align:center">00:00 s</p>
+                </div>
+                <div class="col-md-4" style="border-right:lightgray 1px solid; border-left:lightgray 1px solid; height:inherit">
+                    <h6 style="text-align:center; height:39px;">TOTAL TIME</h6>
+                    <p id="total-time" style="text-align:center">00:00 m</p>
+                </div>
+                <div class="col-md-4" style="border-left:lightgray 1px solid; height:100%">
+                    <h6 style="text-align:center">TOTAL DISTANCE</h6>
+                    <p id="total-distance" style="text-align:center; vertical-align:text-bottom;">0 m</p>
+                </div>
+            </div>
+
+            <div id="track" class="row">
+                <div class="col-md-12" style="margin-left:0px;margin-right:0px;padding:0px;"><h6>Track</h6></div>
+            </div>
+            <hr class="dark-hr" />
+
+            <div class="row" id="atheletes-details">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

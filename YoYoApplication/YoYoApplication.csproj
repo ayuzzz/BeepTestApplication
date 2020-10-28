@@ -11,7 +11,6 @@
     <Folder Include="Models\" />
     <Folder Include="Services\" />
     <Folder Include="Repositories\" />
-    <Folder Include="wwwroot\static-files\css\" />
     <Folder Include="wwwroot\static-files\js\" />
     <Folder Include="wwwroot\static-files\images\" />
   </ItemGroup>

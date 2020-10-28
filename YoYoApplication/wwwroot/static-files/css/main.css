@@ -1,0 +1,94 @@
+﻿#shuttle-details {
+    margin-top: 4vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 12vh;
+}
+
+#track {
+    margin-top: 2vh;
+    margin-left: 0px;
+    margin-right: 0px
+}
+
+#atheletes-details {
+    margin-top: 2vh;
+    overflow: scroll;
+    height: 36vh
+}
+
+#athelete-details {
+    padding: 10px 0;
+}
+
+#counter {
+    margin: 0px;
+}
+
+#countdown-text {
+    visibility: hidden;
+    z-index: 9
+}
+
+#view-details {
+    width: 100%;
+    height: 75%;
+    padding: 0px;
+    background-color: darkcyan;
+    color: white;
+    border-radius: 56px;
+    font-size: xx-large;
+}
+
+.html-class {
+    overflow: hidden !important;
+}
+
+.container-window {
+    height: 94vh;
+    background-color: white;
+    margin: 2vh auto;
+}
+
+.warned-button {
+    margin: auto;
+    border-radius: 16px;
+    font-size: 0.6em;
+    background-color: lightsteelblue;
+    color: white
+}
+
+.warn-button {
+    margin: auto;
+    border-radius: 16px;
+    font-size: 0.6em;
+    background-color: darkcyan;
+    color: white
+}
+
+.stop-button {
+    border-radius: 16px;
+    font-size: 0.6em;
+    background-color: lightcoral;
+    color: white
+}
+
+.select-score {
+    font-size: 0.8em;
+    border: none;
+    text-align: center;
+    outline: none
+}
+
+.gray-hr {
+    color: gray;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.dark-hr {
+    color: black;
+    width: 97%;
+    margin: 0 auto;
+    border-bottom: black 1px solid
+}
